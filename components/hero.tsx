@@ -39,10 +39,24 @@ function HeroComponent() {
               maintainable code and creating solutions that make people's lives easier.
             </p>
             <div className="flex gap-4 justify-center">
-              <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg">
+              <button
+                className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg"
+                onClick={() => {
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
                 View My Work
               </button>
-              <button className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black font-bold py-3 px-8 rounded-lg transition-colors text-lg">
+              <button
+                className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black font-bold py-3 px-8 rounded-lg transition-colors text-lg"
+                onClick={() => {
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
                 Let's Connect
               </button>
             </div>

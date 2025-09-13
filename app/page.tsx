@@ -2,10 +2,10 @@
 
 import { usePageAnimations } from "@/app/animations/useAnimations"
 import ScrollProvider from "@/components/scroll-provider"
-import Navigation from "@/components/navigation"
 import Hero from "@/components/hero"
 import dynamic from "next/dynamic"
 
+const Navigation = dynamic(() => import("@/components/navigation"))
 const AboutSection = dynamic(() => import("@/components/about-section"))
 const ServicesSection = dynamic(() => import("@/components/services-section"))
 const ProjectsSection = dynamic(() => import("@/components/projects-section"))
@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <ScrollProvider>
       <main className="relative bg-black text-white">
+        <Navigation />
         <section className="hero-sticky w-full h-screen overflow-hidden" style={{ position: "sticky", top: "0" }}>
           <Hero />
         </section>
@@ -36,6 +37,7 @@ export default function Home() {
             <ContactSection />
           </section>
         </div>
+        <Footer />
       </main>
     </ScrollProvider>
   )

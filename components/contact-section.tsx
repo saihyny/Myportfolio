@@ -49,12 +49,7 @@ export default function ContactSection() {
       content: "Hyderabad, India",
       description: "Im now ready to work",
     },
-    {
-      icon: Clock,
-      title: "Hours",
-      content: "Mon - Fri: 9AM - 6PM",
-      description: "im ready to join your team",
-    },
+
   ]
 
   return (
