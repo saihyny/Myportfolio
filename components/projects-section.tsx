@@ -26,7 +26,7 @@ export default function ProjectsSection() {
     {
       title: "ScrapMart",
       description: "Full-stack marketplace app built with React + Node.js + MongoDB for scrap trading.",
-      image: "scrapmart.png",
+      image: "/scrapmart.png",
       tech: ["React", "Node.js", "MongoDB", "Firebase", "Redux"],
       category: "E-commerce Platform",
       features: [
@@ -58,7 +58,7 @@ export default function ProjectsSection() {
     {
       title: "Torque & Tone Gym",
       description: "Gym and fitness web application designed to help users manage workouts, track progress, and access fitness resources with TypeScript-based architecture.",
-      image: "gym.png",
+      image: "/gym.png",
       tech: ["TypeScript", "React", "Node.js", "MongoDB", "Express"],
       category: "Fitness Web App",
       features: [

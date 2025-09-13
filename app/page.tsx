@@ -18,7 +18,6 @@ export default function Home() {
   return (
     <ScrollProvider>
       <main className="relative bg-black text-white">
-        <Navigation />
         <section className="hero-sticky w-full h-screen overflow-hidden" style={{ position: "sticky", top: "0" }}>
           <Hero />
         </section>
@@ -37,7 +36,6 @@ export default function Home() {
             <ContactSection />
           </section>
         </div>
-        <Footer />
       </main>
     </ScrollProvider>
   )
